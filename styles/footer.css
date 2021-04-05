@@ -1,0 +1,28 @@
+.footer {
+  padding-bottom: 39px;
+  text-align: center;
+  color: rgba(123, 139, 173, 1);
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.footer__title {
+  font-weight: 700;
+  margin-right: 23px;
+  display: inline-block;
+  position: relative;
+}
+
+.footer__title::before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: -15px;
+  width: 2px;
+  height: 16px;
+  background-color: rgba(123, 139, 173, 1);
+}
+
+.footer__slogan {
+  font-weight: 500;
+}
