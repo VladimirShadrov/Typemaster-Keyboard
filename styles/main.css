@@ -1,0 +1,159 @@
+.main {
+  padding-top: 83px;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.main__left-bar,
+.main__image {
+  width: calc(50% - 15px);
+  min-height: 480px;
+}
+
+.main__left-bar {
+  margin-right: 30px;
+  padding-top: 60px;
+  padding-right: 90px;
+}
+
+.main__title {
+  text-transform: uppercase;
+  font-size: 56px;
+  line-height: 56px;
+  color: rgba(22, 37, 66, 1);
+  margin-bottom: 24px;
+}
+
+.main__description {
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(123, 139, 173, 1);
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.main__button-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.order__orange-button {
+  background-color: rgba(241, 103, 24, 1);
+  color: rgba(255, 255, 255, 1);
+  margin-right: 40px;
+}
+
+.order__orange-button:hover {
+  background-color: rgba(255, 155, 98, 1);
+  transition: 0.3s;
+}
+
+.main__release {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  color: rgba(123, 139, 173, 1);
+}
+
+.main__image {
+  background: url('../images/keyboard-fullscreen.png') center / cover no-repeat;
+  border-radius: 20px;
+}
+
+.main__decoration {
+  position: absolute;
+  top: 0;
+  right: -295px;
+  width: 255px;
+  height: 240px;
+  border-radius: 20px;
+  background-color: rgba(232, 239, 242, 1);
+}
+
+@media (max-width: 950px) {
+  .main {
+    padding-top: 62px;
+  }
+
+  .main__decoration {
+    display: none;
+  }
+
+  .main__image {
+    /* transform: translateX(40px); */
+    background: url('../images/keyboard-tabl.png') center / cover no-repeat;
+    border-top-right-radius: 0%;
+    border-bottom-right-radius: 0%;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    width: 50%;
+  }
+
+  .main__left-bar {
+    padding-right: 35px;
+    margin-right: 0;
+    padding-top: 68px;
+    width: 55%;
+  }
+
+  .main__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 34px;
+  }
+
+  .main__description {
+    font-size: 16px;
+  }
+
+  .order__orange-button {
+    margin-right: 37px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main {
+    padding-top: 64px;
+  }
+
+  .main__left-bar {
+    width: 100%;
+    margin-bottom: 64px;
+    padding-top: 0;
+    padding-right: 0;
+    min-height: 150px;
+  }
+
+  .main__title,
+  .main__description {
+    margin-bottom: 32px;
+  }
+
+  .order__orange-button {
+    width: 150px;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 0;
+  }
+
+  .main__button-container {
+    justify-content: space-between;
+  }
+
+  .main__image {
+    position: relative;
+    right: 0;
+    width: 100%;
+    background: url('../images/keyboard-mob.png') center / cover no-repeat;
+    min-width: 372px;
+    min-height: 331px;
+    border-radius: 20px;
+  }
+}
