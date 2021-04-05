@@ -86,7 +86,6 @@
   }
 
   .main__image {
-    /* transform: translateX(40px); */
     background: url('../images/keyboard-tabl.png') center / cover no-repeat;
     border-top-right-radius: 0%;
     border-bottom-right-radius: 0%;
