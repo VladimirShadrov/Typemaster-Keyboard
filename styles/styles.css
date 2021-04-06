@@ -4,6 +4,7 @@
 @import './description.css';
 @import './advantages.css';
 @import './footer.css';
+@import './modal.css';
 
 * {
   margin: 0;
